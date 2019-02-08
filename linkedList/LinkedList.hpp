@@ -106,7 +106,7 @@ bool LinkedList<T>::removeBack()
 	if(!isEmpty())
 	{
 		lastNode = m_front;
-		for (int count = 1; count < m_size; count++)
+		for (int count = 1; count < (m_size-1); count++)
 		{
 			lastNode = lastNode->getNext();
 		}
